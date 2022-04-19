@@ -1,0 +1,69 @@
+body{
+    background-color:rgb(255, 248, 248);
+}
+
+.cabecera{
+    color:chocolate;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imagenm{
+    color: aliceblue;
+    background-color:white;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid brown;
+}
+
+.descripcion{
+    color:darkred;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.masfotos{
+    color: chocolate;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid brown;
+    text-align: center;
+}
+
+#fb{
+    color: aliceblue;
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#ins{
+    color: aliceblue;
+    background-color: rgb(226, 25, 216);
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#tk{
+    color: aliceblue;
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#redessociales{
+    text-align: center;
+}
