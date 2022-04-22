@@ -6,17 +6,28 @@ body{
     color:chocolate;
     font-size: 50px;
     text-align: center;
+    border: 5px solid brown;
 }
 
 .imagenm{
     color: aliceblue;
     background-color:white;
-    margin-left: 30%;
-    margin-right: 30%;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
-    border: 5px solid brown;
+    border: 5px dotted brown;
+    margin-left: 40%;
+    margin-right: 40%;
+    }
+
+#vaca{
+    width: 100%;
+    height: 100%;
+}
+
+#vaca1{
+    width: 100%;
+    height: 100%;
 }
 
 .descripcion{
@@ -24,6 +35,7 @@ body{
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    border: 5px solid black;
 }
 
 .masfotos{
@@ -35,7 +47,7 @@ body{
     margin-right: 30%;
     padding: 20px;
     border-radius: 10px;
-    border: 5px solid brown;
+    border: 5px double brown;
     text-align: center;
 }
 

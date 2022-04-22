@@ -1,0 +1,11 @@
+body{
+    background-color:azure;
+}
+
+#imagen{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: 0px;
+    padding: 0px;
+}

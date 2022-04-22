@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Transilvania</title>
+    <link rel="stylesheet" href="/EjerciciosHtmlyCss/FormularioHotel/assets/style.css">
+</head>
+<body>
+    <!--MAIN-->
+<div class="main">
+    <!--MAIN-container-->
+    <div class="container">
+      <h2>Formulario de reserva para Hotel Transilvania</h2>
+      <form action="datos.html">
+        <label for="nombre">Nombre</label></br>
+        <input type="text" name="nombre" id="nombre" class="cajas" required></br>
+
+        <label for="apellidos">Apellidos</label></br>
+        <input type="text" name="apellidos" id="apellido" class="cajas" required></br>
+      
+        <label for="email">Email</label></br>
+        <input type="email" placeholder="example@correo.com" name="email" id="email" class="cajas" required></br>
+  
+        <label for="telefono">Teléfono</label></br>
+        <input type="number" placeholder="1234567890" name="telefono" id="telefono" class="cajas"></br>
+        
+        <label for="llegada">Fecha y hora de llegada</label></br>
+        <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="cajas">
+        </br>
+     
+        <label for="estadia">Días de permanencia</label></br>
+       <select id="estadia" class="cajas">
+         <option value="1" label="1">
+         <option value="2" label="2">
+         <option value="3" label="3">
+         <option value="4" label="4">
+         <option value="5" label="5">
+       
+       </select></br>
+
+       <label for="tipoHab">Tipo de Habitación</label> </br>
+       <span>Suite</span><input type="radio" value="Tipo Habitación"><br>
+       <span>Jr. Suite</span><input type="radio" value="Tipo Habitación"></br>
+       <span>Grand Suite</span><input type="radio" value="Tipo Habitación"></br>
+    
+    </br>
+        
+       <label for="comentario">Comentarios</label> </br>
+       <textarea placeholder="Comentarios" rows="5" cols="20"></textarea></br>
+
+        <input style="padding: 2mm;" type="submit" value="enviar" name="submit" class="btn">
+        <input type="reset" value="restablecer" name="reset" class="btn">
+  </form>
+    </div>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios, tablas y anclajes</title>
+    <link rel="stylesheet" href="/EjerciciosHtmlyCss/HtmlAvanzado/assets/style.css">
+</head>
+<body>
+    <!--Anclajes para navegar entre la pagina-->
+    <div id="barNav">
+    <a href="#formulario"><button id="boton">Este es el tema de formulario</button></a>
+    <a href="#miprimeratabla"><button id="boton">Mi primera tabla</button></a>
+    <a href="#animalespeligro"><button id="boton">Animales en peligro</button></a>
+    <a href="#maquetadopagina"><button id="boton">Maquetado de pagina</button></a>
+    </div>
+    <!--
+        Formulario
+
+        Nos sirve para recopilar informacion de nuestros usuarios.
+        
+        Atributos importantes:
+        - action: es donde se va a enviar la informacion.
+        - method es el metodo de envio de la informacion.
+
+        cuando trabajamos con botones dentro de formularios, debemos usar input del tipo boton, Si trabajamos fuera de el, usamos etiqueta button.
+    -->
+    <h2 id="formulario">Este es mi Formulario</h2>
+    <div>
+    <fieldset>
+        <legend id="FC">Formulario de Contacto</legend>
+    <form action="datos.html"><!--action es para mandar la informacion a una pagina o servidor-->
+        <label>Este es un boton simple</label>
+        <input type="button"><!--Este es un boton-->
+        <br>
+        <br>
+        <input type="checkbox"><!--este es un checkbox-->
+        <br>
+        <br>
+        <label>Ingresa la fecha de reservación</label>
+        <input type="date"><!--Este es una fecha-->
+        <br>
+        <br>
+        <label>Ingresa tu email</label>
+        <input type="email" placeholder="example@dominio.com"><!--Este es un email-->
+        <!--pLaceholder es ayuda al usurio-->
+        <br>
+        <br>
+        <label >Nombres</label>
+        <input type="text" required><!--Este es un texto es de una sola linea-->
+        <!--required son datos necesarios-->
+        <br>
+        <br>
+        <label >Apellido Paterno</label>
+        <input type="text" required><!--Este es un texto es de una sola linea-->
+        <br>
+        <br>
+        <label >Apellido Materno</label>
+        <input type="text" required><!--Este es un texto es de una sola linea-->
+        <br>
+        <br>
+        <label>Agrega tu comentario</label>
+        <br>
+        <Textarea placeholder="Quejas y sujerencias"></Textarea> <!--Textarea es para area de comentarios-->
+        <br>
+        <br>
+        <label for="password">Agrega aqui tu contraseña </label>
+        <input type="password" name="password" required><!--Este es una contraseña-->
+        <br>
+        <br>
+        <input type="number"><!--Este es un numero-->
+        <br>
+        <br>
+        <input type="file"><!--Este es para enviar un archivo-->
+        <br>
+        <br>
+        <input type="radio"><!--Este es un radio-->
+        <br>
+        <br>
+        <label for="range">Es un rango</label>
+        <input type="range" name="range"><!--Este es un rango-->
+        <br>
+        <br>
+        <label >Ingresa tu numero telefonico con lada</label>
+        <input type="tel" placeholder="+(lada)(numero telefonico)"><!--Este es un telefono-->
+        <br>
+        <br>
+        <label>Escoge tu hora de tu ciudad</label>
+        <input type="time"><!--Este es una hora-->
+        <br>
+        <br>
+        <label>Borrar toda la información</label>
+        <input type="reset"><!--Este es un boton de reseteo-->
+        <br>
+        <br>
+        <label>Si ya llenaste correcto todo da clic</label>
+        <input type="submit"><!--Estes es un boton de envio-->
+        <br>
+        <br>
+        <label>tortas</label>
+        <input type="checkbox" value="tortas">
+        <br>
+        <label>tacos</label>
+        <input type="checkbox" value="tacos">
+        <br>
+        <label>Enchiladas</label>
+        <input type="checkbox" value="enchiladas">
+        <br>
+        <label>tortas</label>
+        <input type="radio" value="tortas">
+        <br>
+        <label>tacos</label>
+        <input type="radio" value="tacos">
+        <br>
+        <label>Enchiladas</label>
+        <input type="radio" value="enchiladas">
+        <br>
+    </form>
+</fieldset>
+    </div>
+
+    <h1>Aqui empieza el tema de las tablas </h1>
+    <br>
+    <table id="tabla"><!--tabla-->
+        <h3 id="miprimeratabla">Este es mi primer tabla</h3>
+        <th></th>
+        <th>Gastos del 2020</th><!--titulo de la celda-->
+        <th>Gastos del 2021</th>
+        <th>Gastos del 2022</th>
+        <tr><!--inicia mi fila 1-->
+            <th></th><!--titulo de la celda-->
+        <th>Enero</th>
+        <th>Febrero</th>
+        <th>Marzo</th>
+        </tr><!--cierro la fila 1-->
+        <tr><!--Fila 2-->
+        <td>Gera</td><!--celda-->
+        <td>$500</td>
+        <td>$600</td>
+        <td>$1000</td>
+        </tr><!--cierro fila 2-->
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <h3 id="animalespeligro">Animales en peligro de extinción</h3>
+    <!--
+        cellpacing: es el espacio entre celdas
+        cellpading: es el borde de celdas internas
+        colspan: es el numero de columnas que ocupa una celda
+        rowspan: es el numero de filas que ocupa una celda
+    -->
+    <table align="center" cellspacing="2px" cellpading="2px" border="1">
+        <tr><!--fila 1-->
+            <td colspan="4" align="center">Animales en peligro de extinción</td>
+        </tr>
+        <tr><!--Fila 2-->
+            <td>Animal</td>
+            <td>2021</td>
+            <td>2022</td>
+            <td>2023</td>
+        </tr>
+        <tr><!--Fila 3-->
+            <td>oso pardo</td>
+            <td colspan="3">celdas combinadas</td>
+        </tr>
+        <tr><!--Fila 4-->
+            <td>dodo</td>
+            <td colspan="2">celdas combinadas</td>
+            <td></td>
+        </tr>
+        <tr><!--Fila 5-->
+            <td>lince</td>
+            <td rowspan="2" colspan="3">celdas combinadas</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <h1 id="maquetadopagina">Maquetado pagina</h1>
+    <table id="pagina">
+    <tr>
+        <td colspan="2">Navbar</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Texto</td>
+        <td>imagen1</td>
+    </tr>
+    <tr>
+        <td>imagen2</td>
+    </tr>
+    <tr>
+    <td colspan="2">footer</td>
+    </tr>
+    </table>
+    <br>
+    <br>
+</body>
+</html>
