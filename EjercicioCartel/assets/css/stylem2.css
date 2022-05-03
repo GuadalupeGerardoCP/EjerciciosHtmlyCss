@@ -1,0 +1,137 @@
+main{
+    display: grid;
+    margin: 10px;
+    max-width: auto;
+    min-height: 100vh;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;    
+    grid-template-areas:"my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section my-section my-section"
+    "my-aside my-aside my-aside"
+    "my-div1 my-div2 my-div3"
+    "my-rs my-rs my-rs"
+
+}
+
+/*Añadimos colores a las dilas para poder ver todo mejor*/
+
+header{
+    grid-area: my-header;
+}
+
+nav{
+    grid-area: my-nav;
+}
+
+aside{
+    grid-area: my-aside;
+}
+
+#imagen1{
+    grid-area: my-div1;
+    object-fit: cover;
+    border: 50px solid transparent;
+}
+#imagen2{
+    grid-area: my-div2;
+    object-fit: cover;
+    border: 50px solid transparent;
+}
+
+#imagen3{
+    grid-area: my-div3;
+    object-fit: cover;
+    border: 50px solid transparent;
+}
+
+section{
+    grid-area: my-section;
+}
+
+
+body{
+    background-color:rgb(255, 248, 248);
+}
+
+.cabecera{
+    color:chocolate;
+    font-size: 50px;
+    text-align: center;
+    border: 5px solid brown;
+}
+
+.imagenm{
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    }
+
+#vaca{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    border: 5px dotted brown;
+}
+
+#vaca1{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+    border: 10px solid salmon;
+}
+
+.descripcion{
+    color:darkred;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.masfotos{
+    color: chocolate;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px double brown;
+    text-align: center;
+}
+
+#fb{
+    color: aliceblue;
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#ins{
+    color: aliceblue;
+    background-color: rgb(226, 25, 216);
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#tk{
+    color: aliceblue;
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+#redessociales{
+    text-align: center;
+    background-color: black;
+    margin: 0px;
+    grid-area: my-rs;
+}
